@@ -21,6 +21,8 @@ Select distinct product_container from Orders
 Select min(unit_price), avg(unit_price), max(unit_price) from Orders
 Select distinct format(order_date,'yyyy-MM-dd') from Orders
 ````
+- Entity Relationship Diagram
+![image](https://github.com/hhienly/SQL/assets/138852319/c10bf3db-6558-4e45-92d7-b7066df7f978)
 
 ### Query data
 #### Q1: Total orders, returns and sold by month
