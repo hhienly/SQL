@@ -46,7 +46,7 @@ With data as(
       )
 Select *, round(return_qty/order_qty *100,2) as "%_return" from data
 UNION ALL
-select 'Total', sum(dt.order_qty),sum(dt.order_value), sum(dt.shipping_cost), sum(dt.return_qty),sum(dt.return_value), sum(dt.sold_qty), sum(dt.sold_value),sum(dt.sold_profit),round(sum(dt.return_qty)/sum(dt.order_qty)*100,2)
+Select 'Total', sum(dt.order_qty),sum(dt.order_value), sum(dt.shipping_cost), sum(dt.return_qty),sum(dt.return_value), sum(dt.sold_qty), 				sum(dt.sold_value),sum(dt.sold_profit),round(sum(dt.return_qty)/sum(dt.order_qty)*100,2)
 From data dt
 ````
 ![image](https://github.com/hhienly/SQL/assets/138852319/cff81970-9a25-4144-9dad-3ca3f83ad137)
